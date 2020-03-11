@@ -22,6 +22,10 @@ class GridViewAsset extends AssetBundle
      */
     public $baseUrl = '@web';
 
+    public $css = [
+        'https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+    ];
+
     /**
      * @var array
      */

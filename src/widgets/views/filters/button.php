@@ -1,14 +1,17 @@
 <?php
-use yii\bootstrap\Modal;
+use yii\bootstrap4\Modal;
 use yii\helpers\Html;
 
 echo Html::button(
-    Html::tag('span', '', ['class' => 'glyphicon glyphicon-filter', 'id' => 'filter-btn']),
-    ['class' => $class ?? 'btn btn-default']
+    'Фильтры',
+    [
+        'class' => $class ?? 'btn btn-danger',
+        'id' => 'filter-btn'
+    ]
 );
 
 Modal::begin([
-    'header' => Yii::t('app', 'Filters'),
+    'title' => Yii::t('app', 'Filters'),
     'id' => 'filter-modal'
 ]);?>
 <div id="filter-modal-content">

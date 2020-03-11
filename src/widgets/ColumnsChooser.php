@@ -22,7 +22,7 @@ class ColumnsChooser extends Widget
     /**
      * @var string
      */
-    public $buttonClass = 'btn btn-default';
+    public $buttonClass = 'btn btn-outline-secondary';
 
     /**
      * @var array

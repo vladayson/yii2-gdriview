@@ -35,7 +35,7 @@ class Filters extends Widget
     public function renderWidget(): void
     {
         echo $this->render('filters/button', [
-            'class' => 'btn btn-default',
+            'class' => 'btn btn-danger',
             'formView' => $this->view,
             'formParams' => $this->params
         ]);

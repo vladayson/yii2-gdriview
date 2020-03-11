@@ -1,14 +1,14 @@
 <?php
-use yii\bootstrap\Modal;
+use yii\bootstrap4\Modal;
 use yii\helpers\Html;
 
 echo Html::button(
-    Html::tag('span', '', ['class' => 'glyphicon glyphicon-cog', 'id' => 'columns-chooser-btn']),
+    Html::tag('span', '', ['class' => 'fas fa-cogs', 'id' => 'columns-chooser-btn']),
     ['class' => $class ?? 'btn btn-default']
 );
 
 Modal::begin([
-    'header' => Yii::t('app', 'Column Chooser'),
+    'title' => Yii::t('app', 'Column Chooser'),
     'id' => 'column-chooser-modal'
 ]);?>
 <div id="column-chooser-modal-content">
